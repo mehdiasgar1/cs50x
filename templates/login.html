@@ -1,0 +1,52 @@
+{% extends 'mom.html'%}
+{% block body %}
+
+<body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" style="font-family: 'Raleway' ;">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/">خانه</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-left">
+                <li class=" d1"><a href="/login">ورود</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li class=" active"><a href="/signup">ثبت نام</a></li>
+            </ul>
+
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    </div>
+
+    </div>
+    <div class="container-login100">
+        <div>
+            <form action="/login" method="POST">
+
+                <div data-validate="Please enter username">
+                    <input class="input100" type="text" name="username"
+                        style="text-align: right;font-family: 'bnazanin';" placeholder="نام کاربری">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div data-validate="Please enter password">
+                    <input class="input100" type="password" name="pass"
+                        style="text-align: right;font-family: 'bnazanin';" placeholder="رمز عبور">
+                    <span class="focus-input100"></span>
+                </div>
+
+
+                <div>
+                    <button class="login100-form-btn" style="font-family: 'bnazanin';" type="submit">
+                        ورود
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    {% endblock %}

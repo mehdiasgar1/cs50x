@@ -7,14 +7,13 @@
 <div class="navbar navbar-default navbar-fixed-top" style="font-family: 'Raleway' ;">
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/">خانه</a></li>
+            <li class="d1"><a href="/logout">خروج</a></li>
+            <li class="active"><a>{{name+' سلام'}}</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-left">
-            <li class=" d1"><a href="/login">ورود</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-left">
-            <li class=" active"><a href="/signup">ثبت نام</a></li>
+            <a href="/index"><img src=" {{url_for('static',filename='img/chlBall.png' )}}" alt="home" width="77"
+                    height="45" href=" /index" title="Home" /></a>
         </ul>
 
     </div>
@@ -30,6 +29,7 @@
 
                 <h1>لیگ های فوتبال</h1>
                 <h2>جدول لیگ های برتر اروپایی</h2>
+                <h3> برای دیدن محتوا ثبت نام کنید </h3>
             </div><!-- /col-lg-8 -->
         </div><!-- /row -->
     </div> <!-- /container -->
