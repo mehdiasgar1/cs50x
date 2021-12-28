@@ -1,0 +1,87 @@
+{% extends 'mom.html'%}
+
+{% block body %}
+
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" style="font-family: 'Raleway' ;">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="d1"><a href="/logout">خروج</a></li>
+                <li class="active"><a>{{name+' سلام'}}</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-left">
+                <a href="/index"><img src=" {{url_for('static',filename='img/chlBall.png' )}}" alt="home" width="77"
+                        height="45" href=" /index" title="Home" /></a>
+            </ul>
+
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    <div id="hello">
+        <div class="container">
+            <div class="row">
+                <div class="centered" style="font-family:'bnazanin'">
+                    <!-- <img src="assets/img/chlBall.png" alt="ball"> -->
+
+                    <h1>روی لوگو لیگ مورد نظر کلیک کنید</h1>
+                </div><!-- /col-lg-8 -->
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /hello -->
+    <div class="row centered">
+
+        <div class="logoNETH">
+            <!-- netherland league --> <a class="column img1" target="_blank"
+                href="https://www.google.com/search?q=netherlands+league+standings&ei=AILHYavLFsSjgwfL_75I&oq=nether+league+standings&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB5KBAhBGABKBAhGGABQAFicDmDXJmgAcAJ4AIAB1gKIAZwNkgEFMi01LjGYAQCgAQHAAQE&sclient=gws-wiz-serp#sie=lg;/g/11qt1g9pc1;2;/m/04tdqs;st;fp;1;;">
+                <img style=" height: 175px; width: 175px; "
+                    src=" {{url_for('static',filename='img/eredivisie-logo-266AAD40AA-seeklogo.com.png' )}}"></a>
+        </div>
+        <div class="logoPER">
+            <!-- persian gulf pro league--> <a target="_blank" class="column img1"
+                href="https://www.google.com/search?q=persian+gulf+pro+league+standings&ei=zYHHYanIMuWkgwegmJCYDw&oq=persian+standings&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB46CAgAEAcQChAeSgQIQRgASgQIRhgAUABYyQ1g1CRoAHACeACAAa0DiAGKEpIBBzItMy4yLjKYAQCgAQHAAQE&sclient=gws-wiz-serp#sie=lg;/g/11rrq361hh;2;/m/02vmhy;st;fp;1;;">
+                <img style="height: 175px; width: 175px;  "
+                    src=" {{url_for('static',filename='img/png-transparent-persepolis-f-c-iran-2017-18-persian-gulf-pro-league-f-c-aboumoslem-2016-17-persian-gulf-pro-league-others-text-sport-logo-thumbnail-removebg-preview.png' )}}"></a>
+        </div>
+        <div class="logoBUN">
+            <!--bundesliga --> <a class="column img1" target="_blank"
+                href="https://www.google.com/search?q=bundesliga++standings&ei=YIHHYYWsCsafseMPoquRaA&ved=0ahUKEwiF3Pau5__0AhXGT2wGHaJVBA0Q4dUDCA4&uact=5&oq=bundesliga++standings&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgUIABCABDIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB46CAgAEAgQBxAeOgYIABAIEB5KBAhBGABKBAhGGABQAFjiQWCNR2gAcAJ4AIABwQKIAekikgEGMi0xMy4zmAEAoAEBwAEB&sclient=gws-wiz-serp#sie=lg;/g/11m__0kr76;2;/m/037169;st;fp;1;;">
+                <img style="height: 175px; width: 175px; "
+                    src=" {{url_for('static',filename='img/bundesliga-logo.png' )}}"></a>
+        </div>
+
+        <!-- loshampione --> <a class="column img1" target="_blank"
+            href="https://www.google.com/search?q=league+1+french+standings&oq=league+1+french+standing&aqs=chrome.0.0i512j69i57j0i10i22i30l2j0i22i30l2.15120j0j7&sourceid=chrome&ie=UTF-8#sie=lg;/g/11qq96slgb;2;/m/044hxl;st;fp;1;;">
+            <img style="height: 175px; width: 175px;"
+                src=" {{url_for('static',filename='img/ligue-1-logo-0.png' )}}"></a>
+    </div>
+    <div class="logoLALIGA">
+        <!-- laliga --> <a class="column img1" target="_blank"
+            href="https://www.google.com/search?q=la+liga+league+standings+&ei=uz7HYefTLcaXsAftlopw&ved=0ahUKEwinnfHnp__0AhXGC-wKHW2LAg4Q4dUDCA4&uact=5&oq=la+liga+league+standings+&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQBxAeMgUIABCABDIECAAQHjIGCAAQBRAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeOggIABAHEAoQHjoICAAQBxAFEB46CAgAEAgQBxAeSgQIQRgASgUIQBIBMUoECEYYAFAAWIhnYOJ2aAFwAXgAgAGVAogBvBOSAQUwLjUuNpgBAKABAcABAQ&sclient=gws-wiz-serp#sie=lg;/g/11mqlmppsd;2;/m/09gqx;st;fp;1;;">
+            <img alt="Spanish LaLiga Logo" style="height: 175px; width: 175px;"
+                src=" {{url_for('static',filename='img/d75c813f06766ff9a07dce67afa081d7-removebg-preview.png' )}}"></a>
+    </div>
+    <div class="logoSERIA">
+        <!-- seria A --> <a class="column img1" target="_blank"
+            href="https://www.google.com/search?q=seria++league+standings&ei=bD3HYbuNFsSq5OUPnMSw-As&ved=0ahUKEwi78_rHpv_0AhVEFbkGHRwiDL8Q4dUDCA4&uact=5&oq=seria++league+standings&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQBxAKEB4yCAgAEAcQChAeMgoIABAHEAUQChAeOgYIABAHEB5KBAhBGABKBAhGGABQAFjCDGDWIGgAcAJ4AIAByAKIAeAKkgEHMC4xLjQuMZgBAKABAcABAQ&sclient=gws-wiz-serp#sie=lg;/g/11n0vx7n5d;2;/m/03zv9;st;fp;1;;">
+            <img alt="seria a" style="height: 175px; width: 175px;white-space: nowrap;"
+                src=" {{url_for('static',filename='img/fy79v91625170070-removebg-preview.png' )}}"></a>
+    </div>
+    <div class="logoENG">
+        <!-- primer pro league --> <a class="column img1" target="_blank"
+            href="https://www.google.com/search?q=premier+league+standings&oq=premier+league+stan&aqs=chrome.0.0i512j69i57j0i512l8.17035j0j15&sourceid=chrome&ie=UTF-8#sie=lg;/g/11p44qhs93;2;/m/02_tc;st;fp;1;;"><img
+                style="height: 175px; width: 175px; "
+                src=" {{url_for('static',filename='img/i-removebg-preview.png' )}}" alt="ENGLISH PREMIER LEAGUE"></a>
+    </div>
+    <div>
+        <!-- ucl -->
+        <a href="https://www.uefa.com/uefachampionsleague/draws/" class="column img1" target="_blank"><img
+                style="height: 175px; width: 175px; "
+                src=" {{url_for('static',filename='img/UEFA_Champions_League_logo_2.svg-removebg-preview.png' )}}"
+                data-lazy-type="image"
+                data-lazy-src="https://logodownload.org/wp-content/uploads/2017/05/uefa-champions-league-logo-4.png"></a>
+    </div>
+    </div>
+
+    {% endblock %}

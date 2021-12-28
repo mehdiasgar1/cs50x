@@ -40,7 +40,7 @@ def index():
         pass
     else:
         pass
-    return render_template("afterlog.html", name=session.get("userName"))
+    return render_template("main.html", name=session.get("userName"))
 
 
 @app.route("/signup", methods=["POST", "GET"])
